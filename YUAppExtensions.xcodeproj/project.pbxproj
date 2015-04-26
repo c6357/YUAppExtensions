@@ -17,6 +17,8 @@
 		6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFBF1AED275400292EC7 /* ShareViewController.m */; };
 		6767EFC21AED275400292EC7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6767EFC11AED275400292EC7 /* MainInterface.storyboard */; };
 		6767EFC51AED275400292EC7 /* YUAppShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6767EFBA1AED275300292EC7 /* YUAppShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6767EFCC1AED278500292EC7 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */; };
+		6767EFCD1AED278500292EC7 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		6767EFBE1AED275400292EC7 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		6767EFBF1AED275400292EC7 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		6767EFC11AED275400292EC7 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		6767EFCA1AED278500292EC7 /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
+		6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 		6767EF3C1AED134400292EC7 /* YUAppExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				6767EFCA1AED278500292EC7 /* UIApplication+Extension.h */,
+				6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */,
 				6767EF411AED134400292EC7 /* AppDelegate.h */,
 				6767EF421AED134400292EC7 /* AppDelegate.m */,
 				6767EF441AED134400292EC7 /* ViewController.h */,
@@ -309,6 +315,7 @@
 			files = (
 				6767EF461AED134400292EC7 /* ViewController.m in Sources */,
 				6767EF431AED134400292EC7 /* AppDelegate.m in Sources */,
+				6767EFCC1AED278500292EC7 /* UIApplication+Extension.m in Sources */,
 				6767EF401AED134400292EC7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6767EFCD1AED278500292EC7 /* UIApplication+Extension.m in Sources */,
 				6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
