@@ -14,6 +14,9 @@
 		6767EF4B1AED134400292EC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6767EF4A1AED134400292EC7 /* Images.xcassets */; };
 		6767EF4E1AED134400292EC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6767EF4C1AED134400292EC7 /* LaunchScreen.xib */; };
 		6767EF5A1AED134400292EC7 /* YUAppExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EF591AED134400292EC7 /* YUAppExtensionsTests.m */; };
+		6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFBF1AED275400292EC7 /* ShareViewController.m */; };
+		6767EFC21AED275400292EC7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6767EFC11AED275400292EC7 /* MainInterface.storyboard */; };
+		6767EFC51AED275400292EC7 /* YUAppShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6767EFBA1AED275300292EC7 /* YUAppShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +27,28 @@
 			remoteGlobalIDString = 6767EF391AED134400292EC7;
 			remoteInfo = YUAppExtensions;
 		};
+		6767EFC31AED275400292EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6767EF321AED134400292EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6767EFB91AED275300292EC7;
+			remoteInfo = YUAppShare;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6767EFC91AED275400292EC7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6767EFC51AED275400292EC7 /* YUAppShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6767EF3A1AED134400292EC7 /* YUAppExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUAppExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +64,11 @@
 		6767EF531AED134400292EC7 /* YUAppExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUAppExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6767EF581AED134400292EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6767EF591AED134400292EC7 /* YUAppExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUAppExtensionsTests.m; sourceTree = "<group>"; };
+		6767EFBA1AED275300292EC7 /* YUAppShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YUAppShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6767EFBD1AED275400292EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6767EFBE1AED275400292EC7 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		6767EFBF1AED275400292EC7 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		6767EFC11AED275400292EC7 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6767EFB71AED275300292EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +101,7 @@
 			children = (
 				6767EF3C1AED134400292EC7 /* YUAppExtensions */,
 				6767EF561AED134400292EC7 /* YUAppExtensionsTests */,
+				6767EFBB1AED275400292EC7 /* YUAppShare */,
 				6767EF3B1AED134400292EC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +111,7 @@
 			children = (
 				6767EF3A1AED134400292EC7 /* YUAppExtensions.app */,
 				6767EF531AED134400292EC7 /* YUAppExtensionsTests.xctest */,
+				6767EFBA1AED275300292EC7 /* YUAppShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +157,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6767EFBB1AED275400292EC7 /* YUAppShare */ = {
+			isa = PBXGroup;
+			children = (
+				6767EFBE1AED275400292EC7 /* ShareViewController.h */,
+				6767EFBF1AED275400292EC7 /* ShareViewController.m */,
+				6767EFC11AED275400292EC7 /* MainInterface.storyboard */,
+				6767EFBC1AED275400292EC7 /* Supporting Files */,
+			);
+			path = YUAppShare;
+			sourceTree = "<group>";
+		};
+		6767EFBC1AED275400292EC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6767EFBD1AED275400292EC7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +186,12 @@
 				6767EF361AED134400292EC7 /* Sources */,
 				6767EF371AED134400292EC7 /* Frameworks */,
 				6767EF381AED134400292EC7 /* Resources */,
+				6767EFC91AED275400292EC7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6767EFC41AED275400292EC7 /* PBXTargetDependency */,
 			);
 			name = YUAppExtensions;
 			productName = YUAppExtensions;
@@ -157,6 +216,23 @@
 			productReference = 6767EF531AED134400292EC7 /* YUAppExtensionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6767EFB91AED275300292EC7 /* YUAppShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6767EFC81AED275400292EC7 /* Build configuration list for PBXNativeTarget "YUAppShare" */;
+			buildPhases = (
+				6767EFB61AED275300292EC7 /* Sources */,
+				6767EFB71AED275300292EC7 /* Frameworks */,
+				6767EFB81AED275300292EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YUAppShare;
+			productName = YUAppShare;
+			productReference = 6767EFBA1AED275300292EC7 /* YUAppShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +248,9 @@
 					6767EF521AED134400292EC7 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 6767EF391AED134400292EC7;
+					};
+					6767EFB91AED275300292EC7 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -190,6 +269,7 @@
 			targets = (
 				6767EF391AED134400292EC7 /* YUAppExtensions */,
 				6767EF521AED134400292EC7 /* YUAppExtensionsTests */,
+				6767EFB91AED275300292EC7 /* YUAppShare */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6767EFB81AED275300292EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6767EFC21AED275400292EC7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +321,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6767EFB61AED275300292EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +336,11 @@
 			isa = PBXTargetDependency;
 			target = 6767EF391AED134400292EC7 /* YUAppExtensions */;
 			targetProxy = 6767EF541AED134400292EC7 /* PBXContainerItemProxy */;
+		};
+		6767EFC41AED275400292EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6767EFB91AED275300292EC7 /* YUAppShare */;
+			targetProxy = 6767EFC31AED275400292EC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +498,30 @@
 			};
 			name = Release;
 		};
+		6767EFC61AED275400292EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YUAppShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6767EFC71AED275400292EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YUAppShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,12 +541,22 @@
 				6767EF5F1AED134400292EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6767EF601AED134400292EC7 /* Build configuration list for PBXNativeTarget "YUAppExtensionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6767EF611AED134400292EC7 /* Debug */,
 				6767EF621AED134400292EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6767EFC81AED275400292EC7 /* Build configuration list for PBXNativeTarget "YUAppShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6767EFC61AED275400292EC7 /* Debug */,
+				6767EFC71AED275400292EC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
