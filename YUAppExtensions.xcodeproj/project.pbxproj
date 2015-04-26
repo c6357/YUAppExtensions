@@ -14,11 +14,12 @@
 		6767EF4B1AED134400292EC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6767EF4A1AED134400292EC7 /* Images.xcassets */; };
 		6767EF4E1AED134400292EC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6767EF4C1AED134400292EC7 /* LaunchScreen.xib */; };
 		6767EF5A1AED134400292EC7 /* YUAppExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EF591AED134400292EC7 /* YUAppExtensionsTests.m */; };
-		6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFBF1AED275400292EC7 /* ShareViewController.m */; };
-		6767EFC21AED275400292EC7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6767EFC11AED275400292EC7 /* MainInterface.storyboard */; };
 		6767EFC51AED275400292EC7 /* YUAppShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6767EFBA1AED275300292EC7 /* YUAppShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6767EFCC1AED278500292EC7 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */; };
 		6767EFCD1AED278500292EC7 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */; };
+		6767EFD21AED27E300292EC7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6767EFCE1AED27E300292EC7 /* MainInterface.storyboard */; };
+		6767EFD41AED27E300292EC7 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6767EFD01AED27E300292EC7 /* ShareViewController.m */; };
+		6767EFD61AED27F800292EC7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6767EFD51AED27F800292EC7 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +68,12 @@
 		6767EF581AED134400292EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6767EF591AED134400292EC7 /* YUAppExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YUAppExtensionsTests.m; sourceTree = "<group>"; };
 		6767EFBA1AED275300292EC7 /* YUAppShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YUAppShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		6767EFBD1AED275400292EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6767EFBE1AED275400292EC7 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
-		6767EFBF1AED275400292EC7 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
-		6767EFC11AED275400292EC7 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		6767EFCA1AED278500292EC7 /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
 		6767EFCB1AED278500292EC7 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
+		6767EFCE1AED27E300292EC7 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		6767EFCF1AED27E300292EC7 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		6767EFD01AED27E300292EC7 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		6767EFD51AED27F800292EC7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +167,9 @@
 		6767EFBB1AED275400292EC7 /* YUAppShare */ = {
 			isa = PBXGroup;
 			children = (
-				6767EFBE1AED275400292EC7 /* ShareViewController.h */,
-				6767EFBF1AED275400292EC7 /* ShareViewController.m */,
-				6767EFC11AED275400292EC7 /* MainInterface.storyboard */,
+				6767EFCE1AED27E300292EC7 /* MainInterface.storyboard */,
+				6767EFCF1AED27E300292EC7 /* ShareViewController.h */,
+				6767EFD01AED27E300292EC7 /* ShareViewController.m */,
 				6767EFBC1AED275400292EC7 /* Supporting Files */,
 			);
 			path = YUAppShare;
@@ -177,7 +178,7 @@
 		6767EFBC1AED275400292EC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6767EFBD1AED275400292EC7 /* Info.plist */,
+				6767EFD51AED27F800292EC7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -302,7 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6767EFC21AED275400292EC7 /* MainInterface.storyboard in Resources */,
+				6767EFD61AED27F800292EC7 /* Info.plist in Resources */,
+				6767EFD21AED27E300292EC7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6767EFD41AED27E300292EC7 /* ShareViewController.m in Sources */,
 				6767EFCD1AED278500292EC7 /* UIApplication+Extension.m in Sources */,
-				6767EFC01AED275400292EC7 /* ShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

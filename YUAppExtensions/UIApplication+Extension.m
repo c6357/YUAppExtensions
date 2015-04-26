@@ -27,8 +27,8 @@
         Method sharedApplicationMethod = class_getClassMethod([UIApplication class], @selector(sharedApplication));
         if (sharedApplicationMethod != NULL) {
             IMP sharedApplicationMethodImplementation = method_getImplementation(sharedApplicationMethod);
-            Method rsk_sharedApplicationMethod = class_getClassMethod([UIApplication class], @selector(rsk_sharedApplication));
-            method_setImplementation(yu_sharedApplication, sharedApplicationMethodImplementation);
+            Method rsk_sharedApplicationMethod = class_getClassMethod([UIApplication class], @selector(yu_sharedApplication));
+            method_setImplementation(rsk_sharedApplicationMethod, sharedApplicationMethodImplementation);
         }
     }
 }
