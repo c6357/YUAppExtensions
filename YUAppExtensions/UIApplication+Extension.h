@@ -13,6 +13,5 @@
 +(BOOL) isAppExtension;
 
 + (UIApplication *)yu_sharedApplication;
-//TARGET_IS_EXTENSION
 
 @end
